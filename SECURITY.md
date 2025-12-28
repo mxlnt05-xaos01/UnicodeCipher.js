@@ -6,7 +6,7 @@ To use it, you need to have the following versions.
 
 | Programming Language | Supported Versions | Client-Side Compatibility | Server-Side Compatibility | Unicode Compatibility |
 | ------------------ | ------------------- | --------------------------- | ------------------------- | ---------------------- |
-| Javascript | ES6 or Newer | :white_check_mark: | :white_check_mark: | :white_check_mark: | Yes |
+| Javascript | ES6 or Newer | :white_check_mark: | :white_check_mark: | Yes |
 | Node.js | v24.12.x or Newer | :white_check_mark: | :white_check_mark: | Yes |
 | Typescript | 5.9.x or Newer | :white_check_mark: | :white_check_mark: | Yes |
 | Java | OpenJDK 21.x.x or Newer | :x: | :white_check_mark: | Yes (since v1.0) |

@@ -4,14 +4,15 @@
 
 To use it, you need to have the following versions.
 
-| Programming Language | Supported Versions | Client-Side Compatibility | Server-Side Compatibility | Unicode Compatibility |
+| Programming Language | Supported Versions | Client-Side Compatibility | Server-Side Compatibility | Encoding Method |
 | ------------------ | ------------------- | --------------------------- | ------------------------- | ---------------------- |
-| Javascript | ES6 or Newer | :white_check_mark: | :white_check_mark: | Yes |
-| Node.js | v24.12.x or Newer | :white_check_mark: | :white_check_mark: | Yes |
-| Typescript | 5.9.x or Newer | :white_check_mark: | :white_check_mark: | Yes |
-| Java | OpenJDK 21.x.x or Newer | :x: | :white_check_mark: | Yes (since v1.0) |
-| C# and .NET | v12.x or Newer / .NET 8 or Newer | :x: | :white_check_mark: | Yes |
-| Python | v3.12 or Newer | :x: | :white_check_mark: | Yes (No for Python v2) |
+| Javascript | ES6 or Newer | :white_check_mark: | :white_check_mark: | UTF-8/UTF-16 |
+| Node.js | v24.12.x or Newer | :white_check_mark: | :white_check_mark: | UTF-8/UTF-16 |
+| Typescript | 5.9.x or Newer | :white_check_mark: | :white_check_mark: | UTF-8|
+| Java | OpenJDK 21.x.x or Newer | :x: | :white_check_mark: | UTF-16 |
+| C# and .NET | v12.x or Newer / .NET 8 or Newer | :x: | :white_check_mark: | UTF-16 |
+| Python | v3.12 or Newer | :x: | :white_check_mark: | UTF-8 |
+| PHP | v8.3 or Newer | :x: | :white_check_mark: | UTF-8 |
 
 ## Reporting a Vulnerability
 

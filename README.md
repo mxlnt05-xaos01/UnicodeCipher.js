@@ -4,9 +4,34 @@
 A cipher that transcends more than just letters, it utilizes the entire Unicode Consortium, creates new ways to encrypt and decrypt text, and encompasses almost every world language that exists in the world! Whether you would like to use it for software of the past, or you want to use it to meet modern needs, the cipher is a very good way to hide messages and moreover protect information in a website!
 ## Usage
 You can use this by attaching a script tag and put the script name in the src name of the script tag. For HTML Elements, there are variables of which they get their value from the tag of which contains an id. Insert a ID Name into the empty field, and don't forget to check that you put the id name as well for the HTML Element.
+For Example:
+```html
+<label for="textInput">Input</label>
+<input type="text" id="textInput" name="textInput">
+<label for="keywordInput">Keyword</label>
+<input type="text" id="keywordInput" name="keywordInput">
+<button type="button" id="Execute">Transcribe</button
+<!-- This will execute the script that contains the 'document.getElementById("Execute").addEventListener()' function,
+and will get the input data from both input fields via 'document.getElementById("[text]").value'."-->
+```
+Also in order for the script to run immediately, you need to reference it. You can reference it for regular Javascript files like this:
+```html
+<script src="cipher_legacy.js"></script>
+```
+If the script uses ECMAScript 2015 for Javascript, reference it like this:
+```html
+<script type="module" src="cipher_modern.mjs"></script>
+```
 ## Tips
 ### Typescript Reference in HTML
-While Javascript files can be included in the script tag, you need to compile Typescript files, if you do not have a Typescript Compiler, you need to use the following command in the VScode terminal: npm install typescript --save-dev, which will give you a output, then use the command 'npx tsc' to install the Typescript Compiler. Afterwards, to compile a Typescript file, you must run the command 'tsc [filename].ts' to convert it into a js file (it will appear as a separate file).
+While Javascript files can be included in the script tag, you need to compile Typescript files, if you do not have a Typescript Compiler, you need to use the following command in the VScode terminal: npm install typescript --save-dev, which will give you a output, then use the command 'npx tsc' to install the Typescript Compiler. Afterwards, to compile a Typescript file, you must run the command to convert it into a js file (it will appear as a separate file). Copy and paste it into the terminal.
+```bash
+tsc cipher_legacyTS.ts
+```
+or
+```bash
+tsc cipher_modernTS.mts
+```
 ### PHP
 PHP is a server-side language, while HTML and Javascript are both client-side (although in some cases Javascript can be a server-side language [See Node.js: https://www.w3schools.com/nodejs/default.asp]), this means that the order of generation may differ, PHP code is executed first, followed by HTML, and then Javascript. If you don't want to go through the hassle of script execution order, you can copy the code from the Javascript file to the PHP file, although you should consider PHP syntax as well. Reference: https://www.w3schools.com/php/default.asp
 ### Javascript/Typescript ES6+

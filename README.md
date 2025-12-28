@@ -24,7 +24,25 @@ If the script uses ECMAScript 2015 for Javascript, reference it like this:
 ```
 ## Tips
 ### Typescript Reference in HTML
-While Javascript files can be included in the script tag, you need to compile Typescript files, if you do not have a Typescript Compiler, you need to use the following command in the VScode terminal: npm install typescript --save-dev, which will give you a output, then use the command 'npx tsc' to install the Typescript Compiler. Afterwards, to compile a Typescript file, you must run the command to convert it into a js file (it will appear as a separate file). Copy and paste it into the terminal.
+While Javascript files can be included in the script tag, you need to compile Typescript files, if you do not have a Typescript Compiler, you need to use the following command in the VScode terminal:
+```bash
+npm install typescript --save-dev
+```
+resulting in a output:
+```bash
+added 1 package, and audited 2 packages in 2s
+found 0 vulnerabilities
+```
+and then,
+```bash
+npx tsc
+```
+which results in a output:
+```bash
+Version 5.9.3
+tsc: The Typescript Compiler - Version 5.9.3
+```
+Afterwards, to compile a Typescript file, you must run the command to convert it into a js file (it will appear as a separate file). Copy and paste it into the terminal.
 ```bash
 tsc cipher_legacyTS.ts
 ```

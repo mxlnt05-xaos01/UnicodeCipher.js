@@ -24,7 +24,7 @@ Should you notice a vulnerability in the code, any possible loopholes, or possib
 
 It is highly advised to not put sensitive data (i.e. phone number, address, first/last name, social security number, your bank number, username, or password in any input fields, as this information can get stolen the site of which these scripts are deployed has suffered a data breach or is not secure.
 
-## For Websites (Read this if you intend on making a Sign Up/Log In Form
+## For Websites (Read this if you intend on making a Sign Up/Log In Form)
 
 If for whatever reason you need their to store sensitive information, you need to keep that information private. There are several ways to prevent sensitive information from being stolen:
 

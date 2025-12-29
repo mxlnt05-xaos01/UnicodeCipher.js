@@ -4,15 +4,17 @@
 
 To use it, you need to have the following versions.
 
-| Programming Language | Supported Versions | Client-Side Compatibility | Server-Side Compatibility | Encoding Method |
-| ------------------ | ------------------- | --------------------------- | ------------------------- | ---------------------- |
-| Javascript | ES6 or Newer | :white_check_mark: | :white_check_mark: | UTF-8/UTF-16 |
-| Node.js | v24.12.x or Newer | :white_check_mark: | :white_check_mark: | UTF-8/UTF-16 |
-| Typescript | 5.9.x or Newer | :white_check_mark: | :white_check_mark: | UTF-8|
-| Java | OpenJDK 21.x.x or Newer | :x: | :white_check_mark: | UTF-16 |
-| C# and .NET | v12.x or Newer / .NET 8 or Newer | :x: | :white_check_mark: | UTF-16 |
-| Python | v3.12 or Newer | :x: | :white_check_mark: | UTF-8 |
-| PHP | v8.3 or Newer | :x: | :white_check_mark: | UTF-8 |
+| Programming Language | Supported Versions | UTF-8 | UTF-16 |
+| ------------------ | ------------------- | ---------------------- | ------------------------ |
+| Javascript | ES6 or Newer | :ok: | :white_check_mark: |
+| Node.js | v24.12.x or Newer | :ok: | :white_check_mark: |
+| Typescript | 5.9.x or Newer | :white_check_mark: | :white_check_mark: |
+| Java | OpenJDK 21.x.x or Newer | :x: | :white_check_mark: |
+| C# and .NET | v12.x or Newer / .NET 8 or Newer | :x: | :white_check_mark: |
+| Python | v3.12 or Newer | :white_check_mark: | :x: |
+| PHP | v8.3 or Newer | :white_check_mark: | :x: |
+
+Note: C/C++ may have limited support for Unicode.
 
 ## Reporting a Vulnerability
 
@@ -22,7 +24,7 @@ Should you notice a vulnerability in the code, any possible loopholes, or possib
 
 ## Standard Rules
 
-It is highly advised to not put sensitive data (i.e. phone number, address, first/last name, social security number, your bank number, username, or password in any input fields, as this information can get stolen the site of which these scripts are deployed has suffered a data breach or is not secure.
+It is highly advised to not put sensitive data (i.e. phone number, address, first/last name, social security number, your bank number, username, or password) in any input fields, as this information can get stolen the site of which these scripts are deployed has suffered a data breach or is not secure.
 
 ## For Websites (Read this if you intend on making a Sign Up/Log In Form)
 

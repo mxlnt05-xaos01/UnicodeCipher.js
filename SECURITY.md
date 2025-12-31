@@ -4,15 +4,15 @@
 
 To use it, you need to have the following versions.
 
-| Programming Language | Supported Versions | UTF-8 | UTF-16 |
-| ------------------ | ------------------- | ---------------------- | ------------------------ |
-| Javascript | ES6 or Newer | :ok: | :white_check_mark: |
-| Node.js | v24.12.x or Newer | :ok: | :white_check_mark: |
-| Typescript | 5.9.x or Newer | :white_check_mark: | :white_check_mark: |
-| Java | OpenJDK 21.x.x or Newer | :x: | :white_check_mark: |
-| C# and .NET | v12.x or Newer / .NET 8 or Newer | :x: | :white_check_mark: |
-| Python | v3.12 or Newer | :white_check_mark: | :x: |
-| PHP | v8.3 or Newer | :white_check_mark: | :x: |
+| Programming Language | Supported Versions | UTF-8 | UTF-16 | Built-In Security Modules |
+| ------------------ | ------------------- | ---------------------- | ------------------------ | ---------------------------- |
+| Javascript | ES6 or Newer | :ok: | :white_check_mark: | :x: |
+| Node.js | v24.12.x or Newer | :ok: | :white_check_mark: | :white_check_mark: |
+| Typescript | 5.9.x or Newer | :white_check_mark: | :white_check_mark: | :x: |
+| Java | OpenJDK 21.x.x or Newer | :x: | :white_check_mark: | :white_check_mark: |
+| C# and .NET | v12.x or Newer / .NET 8 or Newer | :x: | :white_check_mark: | :white_check_mark: |
+| Python | v3.12 or Newer | :white_check_mark: | :x: | :white_check_mark: |
+| PHP | v8.3 or Newer | :white_check_mark: | :x: | :ok: |
 
 Note: C/C++ may have limited support for Unicode.
 

@@ -1,5 +1,5 @@
 let input = "", keywords = "";
-document.getElementById("").addEventListener("click", MainProtocolL());
+document.getElementById("").addEventListener("click", MainProtocolLJS());
 
 function MainProtocolLJS() {
     // Get Text from HTML Elements

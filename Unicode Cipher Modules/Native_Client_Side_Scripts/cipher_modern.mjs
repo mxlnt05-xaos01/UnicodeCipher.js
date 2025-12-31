@@ -1,7 +1,7 @@
 let inputWords = "", Keywords = "";
-document.getElementById("").addEventListener("click", MainProtocolM());
+document.getElementById("").addEventListener("click", MainProtocolMJS());
 
-function MainProtocolM() {
+function MainProtocolMJS() {
     inputWords = document.getElementById("").value;
     Keywords = document.getElementById("").value;
     // Make sure that you put the Id's of the input fields inside the ("") to get the value of the inputs.

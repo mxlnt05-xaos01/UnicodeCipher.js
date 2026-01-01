@@ -39,8 +39,8 @@ function CharsToDecimalTS(input: string, keyword: string) {
     }
     for(let l = 0, k = 0; l < inputSplit.length; l++) {
         if(l < keywordSplit.length) {
-            Final[l] = CalculationTS(proportionA[l], proportionB[k]);
             k++;
+            Final[l] = CalculationTS(proportionA[l], proportionB[k]);
         }
         else {
             k = 0;

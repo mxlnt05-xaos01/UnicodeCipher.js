@@ -43,8 +43,8 @@ class CipherMTS {
         }
         for(let l = 0, k = 0; l < inputSplit.length; l++) {
             if(k < keywordSplit.length) {
-                Final[l] = CalculationTS(propA[l], propB[k]);
                 k++;
+                Final[l] = CalculationTS(propA[l], propB[k]);
             }
             else {
                 k = 0;

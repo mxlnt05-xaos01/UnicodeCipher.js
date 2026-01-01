@@ -33,8 +33,8 @@
         }
         for($in = 0, $key = 0; $in < $inPutLength; $in++) {
             if($key < $keyWordLength) {
-                $UpFinalization[$in] = Calculation($Feedback[$in], $Keys[$key]);
                 $key++;
+                $UpFinalization[$in] = Calculation($Feedback[$in], $Keys[$key]);
             }
             else {
                 $key = 0;

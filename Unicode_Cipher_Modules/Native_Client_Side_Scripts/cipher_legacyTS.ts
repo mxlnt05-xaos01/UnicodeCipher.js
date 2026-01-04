@@ -1,4 +1,4 @@
-input = "", keywords = "";
+let input = "", keywords = "";
 document.getElementById("")?.addEventListener("click", MainProtocolLTS);
 
 function MainProtocolLTS() {

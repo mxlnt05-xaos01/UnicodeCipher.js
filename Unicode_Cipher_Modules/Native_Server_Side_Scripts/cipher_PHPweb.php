@@ -31,9 +31,8 @@
         for($i = 0; $i < $inPutLength; $i++) {
             $Feedback[i] = IntlChar::ord($Feedback[i]);
         }
-        for($in = 0, $key = 0; $in < $inPutLength; $in++) {
+        for($in = 0, $key = 0; $in < $inPutLength; $in++, $key++) {
             if($key < $keyWordLength) {
-                $key++;
                 $UpFinalization[$in] = Calculation($Feedback[$in], $Keys[$key]);
             }
             else {

@@ -22,9 +22,8 @@ function CharsToDecimal(input, keyword) {
     for(let i = 0; i < inputSplit.length; i++) {
         inputSplit[i] = inputSplit[i].codePointAt(0);
     }
-    for(let l = 0, k = 0; l < inputSplit.length; l++) {
+    for(let l = 0, k = 0; l < inputSplit.length; l++, k++) {
         if(k < keywordSplit.length) {
-            k++;
             Final[l] = Calculation(inputSplit[l], keywordSplit[k]);
         }
         else {

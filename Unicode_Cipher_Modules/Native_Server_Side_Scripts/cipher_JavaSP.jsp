@@ -26,9 +26,8 @@
 
             int[] Funnel = new int[InputCharArray.length];
 
-            for(int in = 0, int key = 0; in < InputCharArray.length; in++) {
+            for(int in = 0, int key = 0; in < InputCharArray.length; in++, key++) {
                 if(DecInput[in] - DecKey[key] < 0) {
-                    key++;
                     Funnel[in] = (DecInput[in] + DecKey[key]) - 32;
                 }
                 else {

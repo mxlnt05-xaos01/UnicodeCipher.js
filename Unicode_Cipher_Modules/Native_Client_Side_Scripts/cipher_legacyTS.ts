@@ -1,4 +1,4 @@
-let input = "", keywords = "";
+input = "", keywords = "";
 document.getElementById("")?.addEventListener("click", MainProtocolLTS);
 
 function MainProtocolLTS() {
@@ -37,9 +37,8 @@ function CharsToDecimalTS(input: string, keyword: string) {
     for(let i = 0; i < inputSplit.length; i++) {
         proportionA[i] = inputSplit[i].charCodeAt(0);
     }
-    for(let l = 0, k = 0; l < inputSplit.length; l++) {
+    for(let l = 0, k = 0; l < inputSplit.length; l++, k++) {
         if(l < keywordSplit.length) {
-            k++;
             Final[l] = CalculationTS(proportionA[l], proportionB[k]);
         }
         else {

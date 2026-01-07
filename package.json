@@ -1,11 +1,8 @@
 {
   "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/multer": "^2.0.0",
-    "@types/mysql": "^2.15.27",
     "express": "^5.2.1",
     "multer": "^2.0.2",
-    "mysql": "^2.18.1",
+    "mysql2": "^3.16.0",
     "typescript": "^5.9.3"
   }
 }

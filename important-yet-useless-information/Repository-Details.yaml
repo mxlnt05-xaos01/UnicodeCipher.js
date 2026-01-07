@@ -1,0 +1,41 @@
+# This information won't make sense regardless even if you try and get the info from the file via javascript.
+
+Project:
+  ID: U-Cipher
+  EM: UTF-8
+  CLIENT-STATUS: OPTIMAL
+  SERVER-STATUS: GOOD
+  COMMIT-LOGS:
+  - 1 # 12/17/25
+  - 8A # 12/25/25
+  - 8B
+  - 8C
+  - 8D
+  - 8E
+  - 10A # 12/27/25
+  - 10B
+  - 10C
+  - 10D
+  - 10E
+  - 10F
+  - 10G
+  - 11 # 12/28/25
+  - 12A # 12/29/25
+  - 12B
+  - 12C
+  - 14A # 12/31/25
+  - 14B
+  - 14C
+  - 15A # 1/1/26
+  - 15B
+  - 16 # 1/2/26
+  - 18 # 1/4/26
+  - 19 # 1/5/26
+  - 20 # 1/6/26
+  HTML-CSS-COMPATIBILITY: YES
+  REACT-JSX-COMPATIBILITY: TBD
+  NODEJS-COMPATIBILITY: HIGHLY LIKELY
+  REQUIRE-INTERNET:
+  - CLIENT: YES
+  - SERVER: MAYBE
+  ASYNCHRONOUS-OPERATION: NO

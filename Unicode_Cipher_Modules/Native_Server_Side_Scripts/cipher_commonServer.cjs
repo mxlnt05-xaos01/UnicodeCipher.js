@@ -2,7 +2,7 @@
 
 const express = require('express');
 const multer = require('multer');
-const mysql = require('mysql');
+const mysql = require('mysql/promise');
 
 const app = express();
 const upload = multer();
@@ -29,10 +29,9 @@ const CipherData = (req, res, next) => {
             Final[p] = Calculation(inputSplit[p], keywordSplit[e]);
         }
     }
-    for(let x = 0; x < inputSplit.length; x++) {
-        Final[p] = String.fromCharCode(Final[p]);
-    }
-    req.body.input = Final.join("");
+    const inF = Final.map(code => String.fromCharCode(code));
+    const Finalization = inF.join("");
+    req.body.input = Finalization;
     next();
 };
 
@@ -53,13 +52,16 @@ app.post('/submit-form', upload.none(), CipherData, (req, res) => {
     // Do whatever you want with this field.
 });
 
+// Client Errors
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    res.status(500).send("Faulty Server Packet");
+    res.status(500).send("Server Processing Failure!");
 });
+
+// Put MySQL Code here.
+
+// Server Errors
 
 app.listen(servport, () => {
     console.log(`Listening at localhost id: ${servport}`);
 });
-
-// Put MySQL Code here.

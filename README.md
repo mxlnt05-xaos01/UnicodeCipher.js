@@ -87,7 +87,9 @@ Do not unbind the const variables from their values, nor change their values to 
 ### Node Modules
 Do not modify Node Modules, these are packages from NPM/NPX, and changing them would affect how the code runs.
 ### Compatibility
-fromCharCode() and charCodeAt() can only go up to the limit of 16 bits in UTF-16 (U+0000 to U+FFFF), above this you need to have a surrogate pair, otherwise it either won't show up or will show the wrong character, consider using fromCodePoint() and codePointAt() if you want to include all of the characters in the UTF-8 (0x0000 - 0x10FFFF).
+`fromCharCode()` and `charCodeAt()` can only go up to the limit of 16 bits in UTF-16 (U+0000 to U+FFFF), above this you need to have a surrogate pair, otherwise it either won't show up or will show the wrong character, consider using `fromCodePoint()` and `codePointAt()` if you want to include all of the characters in the UTF-8 (0x0000 - 0x10FFFF).
+## Between PHP Scripts
+I specifically placed a require statement in one of the php files, especially a php file that connects to the mysql server. You have to include the client script and the server script for PHP, otherwise it will throw an error.
 ## Fun Facts
 1. UTF-8 is the current encoding system, including over 1 million characters, ranging from 1-4 bytes, and even more.
 2. Indexes 32-127 of UTF-8 are the same as ASCII, even including its control characters.

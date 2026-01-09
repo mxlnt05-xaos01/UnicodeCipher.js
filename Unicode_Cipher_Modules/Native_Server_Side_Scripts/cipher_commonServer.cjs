@@ -2,12 +2,20 @@
 
 const express = require('express');
 const multer = require('multer');
-const mysql = require('mysql/promise');
+const mysql = require('mysql2/promise');
 
 const app = express();
 const upload = multer();
 
 const servport = Math.floor(Math.random() * (9999 - 0 + 1)) + 0;
+
+// Put your username, password, and name of your database when you have mysql here.
+const cnctPool = mysql.createPool({
+    host: "localhost",
+    database: "dbName",
+    user: "yourUserName",
+    password: "yourPassWord"
+});
 
 const CipherData = (req, res, next) => {
     const inputSplit = req.body.input.split("");
@@ -50,6 +58,7 @@ function Calculation(a, b) {
 
 app.post('/submit-form', upload.none(), CipherData, (req, res) => {
     // Do whatever you want with this field.
+    // Query Statements per action.
 });
 
 // Client Errors
